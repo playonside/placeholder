@@ -1,39 +1,185 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="We are building a tool to help you intentionally recruit the right people, not just great players.">
+  <link rel="icon" type="image/png" href="./favicon.png?v=1" />
   <title>Onside</title>
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      padding: 0;
+      margin: 0;
+    }
+
+    body,
+    input,
+    button {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 100%;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 72px auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .text {
+      line-height: 1.375;
+    }
+
+    .lighter-text {
+      color: #84898b;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #B0B3B4;
+    }
+
+    ::-moz-placeholder {
+      color: #B0B3B4;
+    }
+
+    :-ms-input-placeholder {
+      color: #B0B3B4;
+    }
+
+    :-moz-placeholder {
+      color: #B0B3B4;
+    }
+
+    .form label {
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .form input,
+    .form button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 5px;
+    }
+
+    .form input {
+      margin-bottom: 12px;
+      width: 100%;
+      border: 1px solid #D4D6D7;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+      -webkit-appearance: none;
+    }
+
+    .form button {
+      width: 100%;
+      background-color: #263134;
+      color: white;
+      cursor: pointer;
+    }
+
+    .pics {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .pic {
+      width: 80px;
+    }
+
+    @media (max-width: 374px) {
+      .pic {
+        width: 65px;
+      }
+    }
+
+    .pic img {
+      width: 100%;
+    }
+
+    .pic-name {
+      margin-top: 6px;
+      font-size: 0.75rem;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="bg-img">
-    <div class="content">
-      <div class="text-area">
-        <p>Build a team driven by a mission. Build a team striving for something greater than themselves, united by a common culture.</p>
-
-        <p>Recruiting is about more than talent. It's about values.</p>
-
-        <p>Recruiting is about finding people who will fight for your mission, values, and team, and adopting them into your family.</p>
-
-        <p>We're building a tool to help intentionally recruit the right people, not just great players.</p>
-
-        <p>Let’s go beyond Xs and Os together.</p>
+  <div class="container">
+    <div class="text">
+      <p>
+        <strong>
+          Recruiting is more than just finding talent.
+          <br /> It’s about values.
+        </strong>
+      </p>
+      <p>
+        It's a battle to find elite athletes who will fight for your mission, values, and team.
+      </p>
+      <p>
+        We are building a tool to help you intentionally recruit the right people, not just great players.
+      </p>
+      <p>
+        Let’s go beyond X's and O's together.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="form">
+      <form method="post" action="https://tuemilio.com/api/email/IBt499leyGKOSPr8yKOpg4CBOGWEfvJF2QRHCurN" accept-charset=utf-8>
+        <label for="address" class="lighter-text">Email address:</label>
+        <input type="email" name="address" value="" autocomplete="off" required placeholder="name@example.com">
+        <button type="submit">Keep me updated</button>
+      </form>
+    </div>
+  </div>
+  <div class="container center lighter-text">
+    We are Onside.
+    <a href="mailto:hello@playonside.com">Email us</a>.
+  </div>
+  <div class="container">
+    <div class="pics">
+      <div class="pic">
+        <img src="./pics/JR.png" />
+        <div class="pic-name center lighter-text">John Reagan</div>
       </div>
-      <div class="input-area">
-
-          <form method="POST" action="https://tuemilio.com/api/email/IBt499leyGKOSPr8yKOpg4CBOGWEfvJF2QRHCurN" accept-charset=utf-8>
-            <div class="group">
-              <input type="email" name="address" value="" autocomplete="off" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Email</label>
-            </div>
-            <button type="submit">Keep me updated</button>
-          </form>
+      <div class="pic">
+        <img src="./pics/Blake.png" />
+        <div class="pic-name center lighter-text">Blake</div>
+      </div>
+      <div class="pic">
+        <img src="./pics/Jesse.png" />
+        <div class="pic-name center lighter-text">Jesse</div>
+      </div>
+      <div class="pic">
+        <img src="./pics/Steve.png" />
+        <div class="pic-name center lighter-text">Steve</div>
       </div>
     </div>
   </div>
 </body>
+
 </html>
